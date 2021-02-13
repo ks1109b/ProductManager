@@ -29,14 +29,14 @@ class ProductManagerTest {
     @Test
     public void shouldSearchBookByName() {
         Product[] expected = new Product[]{firstBook};
-        Product[] actual = manager.searchBy("book 1");
+        Product[] actual = manager.searchBy("Book 1");
         assertArrayEquals(expected, actual);
     }
 
     @Test
     public void shouldSearchBookByAuthor() {
         Product[] expected = new Product[]{firstBook, secondBook};
-        Product[] actual = manager.searchBy("author");
+        Product[] actual = manager.searchBy("Author");
         assertArrayEquals(expected, actual);
     }
 
